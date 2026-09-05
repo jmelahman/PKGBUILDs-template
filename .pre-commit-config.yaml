@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/jmelahman/pkglint
-    rev: v1.5.2 # 1.5.2
+    rev: 0f339c716e1e58741508ff2f8e4edec113347726 # frozen: v1.5.2
     hooks:
       - id: pkglint
       - id: pkglint-build
@@ -12,7 +12,7 @@ repos:
   # shellcheck-py rather than koalaman's own hook: that one is a docker_image
   # hook, and CI runs the hooks inside a container, where there is no docker.
   - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.11.0.1-1 # v0.11.0.1-1
+    rev: a6564f5d57444e123433a5c9af733e3975c77229 # frozen: v0.11.0.1-1
     hooks:
       - id: shellcheck
         args:
@@ -23,11 +23,11 @@ repos:
             "--exclude=SC2034,SC2154",
           ]
   - repo: https://github.com/zizmorcore/zizmor-pre-commit
-    rev: v1.30.0 # v1.30.0
+    rev: cef8b8350da46d8114c7e6b7272aebdccdf193ce # frozen: v1.30.0
     hooks:
       - id: zizmor
   - repo: https://github.com/rhysd/actionlint
-    rev: v1.7.12 # v1.7.12
+    rev: 914e7df21a07ef503a81201c76d2b11c789d3fca # frozen: v1.7.12
     hooks:
       - id: actionlint
         # actionlint does not know the `$/` self-repository syntax yet:
